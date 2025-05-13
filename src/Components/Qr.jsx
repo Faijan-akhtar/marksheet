@@ -5,11 +5,12 @@ const Qr = () => {
     <div style={{ textAlign: 'center', marginTop: '50px' }}>
       <h2>Scan to View Student Result</h2>
       <QRCode
-        value="svueduinresultmarksheet-set20a.netlify.app" // 🔗 Replace with your deployed link
+        value="svueduinresultmarksheetview20aa.netlify.app"// 🔗 Replace with your deployed link
         size={200}
-        fgColor="#000000"
-        bgColor="#ffffff"
-        level="H"
+      bgColor="transparent" // makes background transparent
+      fgColor="#000000"     // QR code color
+      includeMargin={false}
+      level="H"
       />
     </div>
   );
